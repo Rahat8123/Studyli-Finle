@@ -40,11 +40,14 @@ use App\Http\Controllers\CounselingController;
 Route::get('/', [UserController::class, 'Index'])->name('index');
 
 
-Route::get('/dashboard', function () {
-    return view('frontend.dashboard.index');
-})->middleware(['auth','roles:user','verified'])->name('dashboard');
+// Route::get('/dashboard', function () {
+//     return view('frontend.dashboard.index');
+// })->middleware(['auth','roles:user','verified'])->name('dashboard');
+Route::get('/dashboard', [UserController::class, 'dashboard'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
+    Route::get('/dashboard', [UserController::class, 'dashboard'])->name('dashboard');
+
     // --- Counseling Routes for Student ---
 Route::get('/counseling/request', [CounselingController::class, 'userIndex'])->name('user.counseling');
 Route::post('/counseling/store', [CounselingController::class, 'store'])->name('counseling.store');
