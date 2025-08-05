@@ -2,20 +2,20 @@
 @section('userdashboard')
 
 <div class="container-fluid">
-     
+
     <div class="section-block mb-5"></div>
     <div class="dashboard-heading mb-5">
         <h3 class="fs-22 font-weight-semi-bold">My Courses</h3>
     </div>
     <div class="dashboard-cards mb-5">
-       
+
        @foreach ($mycourse as $item)
         <div class="card card-item card-item-list-layout">
             <div class="card-image">
                 <a href="{{ route('course.view',$item->course_id) }}" class="d-block">
                     <img class="card-img-top" src="{{ asset($item->course->course_image) }}" alt="Card image cap">
                 </a>
-                
+
             </div><!-- end card-image -->
             <div class="card-body">
                 <h6 class="ribbon ribbon-blue-bg fs-14 mb-3">{{ $item->course->label }}</h6>
@@ -57,14 +57,14 @@
                     </div>
                 </div>
             </div><!-- end card-body -->
-        </div><!-- end card --> 
+        </div><!-- end card -->
         @endforeach
 
 
-       
+
     </div><!-- end col-lg-12 -->
-     
-    
+
+
 </div><!-- end container-fluid -->
 
 

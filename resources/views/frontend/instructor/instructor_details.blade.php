@@ -1,7 +1,13 @@
 @extends('frontend.master')
 @section('home')
 
+@section('title')
 
+
+ {{ $instructor->name }} | Easy Learn
+
+
+@endsection
 <!-- ================================
     START BREADCRUMB AREA
 ================================= -->
@@ -18,6 +24,7 @@
                     <p class="lh-18">{{ $instructor->email }}</p>
                 </div>
             </div><!-- end media -->
+
             <ul class="social-icons social-icons-styled social--icons-styled">
                 <li><a href="#"><i class="la la-facebook"></i></a></li>
                 <li><a href="#"><i class="la la-twitter"></i></a></li>
@@ -200,6 +207,41 @@
     <div class="bg-gray py-5">
         <div class="container">
             <ul class="nav nav-tabs generic-tab justify-content-center" id="myTab" role="tablist">
+                @auth
+                     <li class="nav-item">
+
+ <div id="app">
+
+
+            <send-message :recevierid="{{ $instructor->id }}" receivername="{{ $instructor->name }}"></send-message>
+
+
+        </div>
+
+
+                </li>
+
+
+                @else
+
+
+                <button class="btn theme-btn d-none d-lg-inline-block">Login First</button>
+
+
+
+
+
+                @endauth
+
+
+
+
+
+
+
+
+
+
                 <li class="nav-item">
                     <a class="nav-link active" id="about-me-tab" data-toggle="tab" href="#about-me" role="tab" aria-controls="about-me" aria-selected="false">
                         About Me
@@ -291,9 +333,9 @@
         </div>
         <div class="divider"><span></span></div>
         <div class="row pt-30px">
-           
-           
-            @foreach ($courses as $course) 
+
+
+            @foreach ($courses as $course)
             <div class="col-lg-4 responsive-column-half">
                 <div class="card card-item card-preview" data-tooltip-content="#tooltip_content_1{{ $course->id }}">
                     <div class="card-image">
@@ -339,10 +381,10 @@
                             @if ($course->discount_price == NULL)
                             <p class="card-price text-black font-weight-bold">${{ $course->selling_price }}  </p>
                             @else
-                            <p class="card-price text-black font-weight-bold">${{ $course->discount_price }} <span class="before-price font-weight-medium">${{ $course->selling_price }}</span></p> 
+                            <p class="card-price text-black font-weight-bold">${{ $course->discount_price }} <span class="before-price font-weight-medium">${{ $course->selling_price }}</span></p>
                             @endif
 
-                            
+
                             <div class="icon-element icon-element-sm shadow-sm cursor-pointer" title="Add to Wishlist"><i class="la la-heart-o"></i></div>
                         </div>
                     </div><!-- end card-body -->
@@ -350,7 +392,7 @@
             </div><!-- end col-lg-4 -->
             @endforeach
 
-          
+
         </div><!-- end row -->
         <div class="text-center pt-3">
             <nav aria-label="Page navigation example" class="pagination-box">
@@ -387,7 +429,7 @@
 
 <!-- tooltip_templates -->
 @foreach ($courseData as $item)
-     
+
 <div class="tooltip_templates">
     <div id="tooltip_content_1{{ $item->id }}">
         <div class="card card-item">
@@ -398,9 +440,9 @@
                     @if ($item->bestseller == 1)
                     <h6 class="ribbon fs-14 mr-2">Bestseller</h6>
                     @else
-                    <h6 class="ribbon fs-14 mr-2">New</h6> 
+                    <h6 class="ribbon fs-14 mr-2">New</h6>
                     @endif
-                   
+
                     <p class="text-success fs-14 font-weight-medium">Updated<span class="font-weight-bold pl-1">{{ $item->created_at->format('M d Y') }}</span></p>
                 </div>
                 <ul class="generic-list-item generic-list-item-bullet generic-list-item--bullet d-flex align-items-center fs-14">
@@ -410,11 +452,11 @@
                 <p class="card-text pt-1 fs-14 lh-22">{{ $item->prerequisites }}</p>
 
     @php
-       $goals = App\Models\Course_goal::where('course_id',$item->id)->orderBy('id','DESC')->get(); 
+       $goals = App\Models\Course_goal::where('course_id',$item->id)->orderBy('id','DESC')->get();
     @endphp
                 <ul class="generic-list-item fs-14 py-3">
                     @foreach ($goals as $goal)
-                    <li><i class="la la-check mr-1 text-black"></i> {{ $goal->goal_name }}</li> 
+                    <li><i class="la la-check mr-1 text-black"></i> {{ $goal->goal_name }}</li>
                     @endforeach
                 </ul>
                 <div class="d-flex justify-content-between align-items-center">

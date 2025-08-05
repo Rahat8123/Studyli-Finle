@@ -118,4 +118,11 @@ public function dashboard()
     // Return to the Blade view with variables
     return view('frontend.dashboard.index', compact('enrolledCount', 'activeCount'));
 }
+ public function LiveChat(){
+
+
+        return view('frontend.dashboard.live_chat');
+
+
+    } // End Method 
 }

@@ -1,13 +1,13 @@
 <!doctype html>
 <html lang="en">
 
-<head> 
+<head>
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!--favicon-->
 	<link rel="icon" href="{{ asset('backend/assets/images/favicon-32x32.png') }}" type="image/png"/>
-	
+	@vite(['resources/js/app.js'])
 	<meta name="csrf-token" content="{{ csrf_token() }}">
 
 
@@ -65,7 +65,7 @@
 	</div>
 	<!--end wrapper-->
 
- 
+
 	<!--end switcher-->
 	<!-- Bootstrap JS -->
 	<script src="{{ asset('backend/assets/js/bootstrap.bundle.min.js') }}"></script>
@@ -84,7 +84,7 @@
 		new PerfectScrollbar('.chat-content');
 	</script>
 
-	
+
 	<!--app JS-->
 	<script src="{{ asset('backend/assets/js/app.js') }}"></script>
 
@@ -93,7 +93,7 @@
 	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 	<script src="{{ asset('backend/assets/js/code.js') }}"></script>
 
-	
+
 	<script>
 		new PerfectScrollbar(".app-container")
 	</script>
@@ -118,9 +118,9 @@
 
     case 'error':
     toastr.error(" {{ Session::get('message') }} ");
-    break; 
+    break;
  }
- @endif 
+ @endif
 </script>
 
 
@@ -143,7 +143,7 @@
 	   });
 	</script>
 
-	
+
 </body>
 
 </html>
