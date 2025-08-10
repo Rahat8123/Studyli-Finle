@@ -530,7 +530,6 @@
             </form>
         </div>
     </div>
-
     <div class="card mt-4">
         <div class="card-header bg-secondary text-white">
             <h6 class="mb-0">📋 My Counseling Requests</h6>
@@ -540,12 +539,7 @@
                 <table class="table table-bordered table-striped">
                     <thead class="thead-dark">
                         <tr>
-                            <th>📚 Course</th>
-                            <th>🎓 Lecture</th>
-                            <th>📅 Date</th>
-                            <th>⏰ Time</th>
-                            <th>💻 Mode</th>
-                            <th>📊 Status</th>
+                            <th>📚 Course</th><th>🎓 Lecture</th> <th>📅 Date</th><th>⏰ Time</th><th>💻 Mode</th><th>📊 Status</th>
                             <th>💬 Teacher Reply</th>
                         </tr>
                     </thead>

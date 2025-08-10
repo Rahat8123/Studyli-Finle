@@ -3,7 +3,7 @@
 
 <div class="page-content">
     <!--breadcrumb-->
-    <div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3"> 
+    <div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
         <div class="ps-3">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb mb-0 p-0">
@@ -15,13 +15,13 @@
         </div>
         <div class="ms-auto">
             <div class="btn-group">
-            
+
            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Add Blog Category</button>
             </div>
         </div>
     </div>
-    <!--end breadcrumb-->
-  
+   
+
     <div class="card">
         <div class="card-body">
             <div class="table-responsive">
@@ -30,38 +30,38 @@
                         <tr>
                             <th>Sl</th>
                             <th>Category Name </th>
-                            <th>Category Slug</th> 
+                            <th>Category Slug</th>
                             <th>Action</th>
                         </tr>
                     </thead>
                     <tbody>
-                       
-                        @foreach ($category as $key=> $item) 
+
+                        @foreach ($category as $key=> $item)
                         <tr>
                             <td>{{ $key+1 }}</td>
                             <td> {{ $item->category_name }}  </td>
-                            <td>{{ $item->category_slug }}</td> 
+                            <td>{{ $item->category_slug }}</td>
                             <td>
-      
+
        <button type="button" class="btn btn-info px-5" data-bs-toggle="modal" data-bs-target="#category" id="{{ $item->id }}" onclick="categoryEdit(this.id)">Edit</button>
 
-       <a href="{{ route('delete.blog.category',$item->id) }}" class="btn btn-danger px-5" id="delete">Delete </a>                    
+       <a href="{{ route('delete.blog.category',$item->id) }}" class="btn btn-danger px-5" id="delete">Delete </a>
                             </td>
                         </tr>
                         @endforeach
-                         
+
                     </tbody>
-                     
+
                 </table>
             </div>
         </div>
     </div>
 
 
-   
-   
+
+
 </div>
- 
+
 
 	<!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -69,9 +69,9 @@
             <div class="modal-content">
                 <div class="modal-header">
               <h5 class="modal-title" id="exampleModalLabel">Blog Category</h5>
-                  
+
                 </div>
-                <div class="modal-body"> 
+                <div class="modal-body">
            <form action="{{ route('blog.category.store') }}" method="post">
             @csrf
 
@@ -79,9 +79,9 @@
                 <label for="input1" class="form-label">Blog Category Name</label>
                 <input type="text" name="category_name" class="form-control" id="input1"  >
             </div>
-                    
+
                 </div>
-                <div class="modal-footer"> 
+                <div class="modal-footer">
                     <button type="submit" class="btn btn-primary">Save changes</button>
                 </div>
             </form>
@@ -96,9 +96,9 @@
             <div class="modal-content">
                 <div class="modal-header">
               <h5 class="modal-title" id="exampleModalLabel">Edit Blog Category</h5>
-                  
+
                 </div>
-                <div class="modal-body"> 
+                <div class="modal-body">
            <form action="{{ route('blog.category.update') }}" method="post">
             @csrf
 
@@ -108,9 +108,9 @@
                 <label for="input1" class="form-label">Blog Category Name</label>
                 <input type="text" name="category_name" class="form-control" id="cat"  >
             </div>
-                    
+
                 </div>
-                <div class="modal-footer"> 
+                <div class="modal-footer">
                     <button type="submit" class="btn btn-primary">Save changes</button>
                 </div>
             </form>

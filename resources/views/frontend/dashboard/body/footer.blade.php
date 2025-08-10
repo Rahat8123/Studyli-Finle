@@ -6,11 +6,11 @@
             </div>
             <div>
                 <p class="copy-desc mb-1" style="font-size: 16px; font-weight: 600; color: #495057; margin: 0;">
-                    &copy; 2024 <span style="color: #667eea; font-weight: 700;">Aduca</span>. All Rights Reserved.
+                    &copy; 2025 <span style="color: #667eea; font-weight: 700;">Studyli</span>. All Rights Reserved.
                 </p>
                 <p class="mb-0" style="font-size: 14px; color: #6c757d; margin: 0;">
                     Crafted with <i class="fas fa-heart" style="color: #dc3545;"></i> by
-                    <a href="https://techydevs.com/" style="color: #667eea; text-decoration: none; font-weight: 600;">TechyDevs</a>
+                    <a href="https://techydevs.com/" style="color: #667eea; text-decoration: none; font-weight: 600;">Daffodil Student</a>
                 </p>
             </div>
         </div>

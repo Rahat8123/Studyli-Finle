@@ -5,7 +5,7 @@
                 <div class="row align-items-center">
                     <div class="col-lg-12">
                         <div class="logo-box logo--box">
-                            <a href="index.html" class="logo"><img src="{{ asset('frontend/images/logo.png') }}" alt="logo"></a>
+                            <a href="index.html" class="logo"><img src="{{ asset('frontend/images/logo2.png') }}" alt="logo" style="width: 150px"></a>
                             <div class="user-btn-action">
                                 <div class="search-menu-toggle icon-element icon-element-sm shadow-sm mr-2" data-toggle="tooltip" data-placement="top" title="Search">
                                     <i class="la la-search"></i>
@@ -27,8 +27,8 @@
                             </form>
                             <div class="nav-right-button d-flex align-items-center">
                                 <div class="user-action-wrap d-flex align-items-center">
-                                 
-                                   
+
+
     <div class="shop-cart wishlist-cart pr-3 mr-3 border-right border-right-gray">
         <ul>
             <li>
@@ -126,7 +126,7 @@
     $id = Auth::user()->id;
     $profileData = App\Models\User::find($id);
     @endphp
-    
+
 
     <div class="shop-cart user-profile-cart">
         <ul>
@@ -174,7 +174,7 @@
                     </li>
                     <li>
                         <ul class="generic-list-item">
-                             
+
                             <li>
                                 <a href="dashboard-settings.html">
                                     <i class="la la-gear mr-1"></i> Settings

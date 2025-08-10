@@ -41,7 +41,7 @@
                                  <img src="{{ asset('backend/assets/images/login-images/login-cover.svg') }}" class="img-fluid auth-img-cover-login" width="650" alt=""/>
 							</div>
 						</div>
-						
+
 					</div>
 
 					<div class="col-12 col-xl-5 col-xxl-4 auth-cover-right align-items-center justify-content-center">
@@ -51,12 +51,12 @@
 									<div class="mb-3 text-center">
 										<img src="{{ asset('backend/assets/images/logo-icon.png') }}" width="60" alt="">
 									</div>
-									<div class="text-center mb-4">
+									<div class="text-center mb-4"  >
 										<h5 class="">Admin Login </h5>
 										<p class="mb-0">Please log in to your account</p>
 									</div>
 									<div class="form-body">
-       
+
      <form class="row g-3" method="POST" action="{{ route('login') }}">
                 @csrf
 
@@ -155,23 +155,23 @@
 		case 'info':
 		toastr.info(" {{ Session::get('message') }} ");
 		break;
-	
+
 		case 'success':
 		toastr.success(" {{ Session::get('message') }} ");
 		break;
-	
+
 		case 'warning':
 		toastr.warning(" {{ Session::get('message') }} ");
 		break;
-	
+
 		case 'error':
 		toastr.error(" {{ Session::get('message') }} ");
-		break; 
+		break;
 	 }
-	 @endif 
+	 @endif
 	</script>
 
-	
+
 </body>
 
 </html>

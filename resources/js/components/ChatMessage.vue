@@ -167,7 +167,7 @@
             <path d="M21 15A2 2 0 0 1 19 17H7L4 20V5A2 2 0 0 1 6 3H19A2 2 0 0 1 21 5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </div>
-        <h3>Welcome to Advanced Chat</h3>
+        <h3>Welcome to Studili live Chat</h3>
         <p>Select a conversation to start messaging</p>
       </div>
     </div>

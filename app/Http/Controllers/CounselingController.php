@@ -29,9 +29,6 @@ public function userIndex()
     return view('frontend.dashboard.counseling_request', compact('courses', 'requests'));
 }
 
-
-
-
     // Store a new counseling request
     public function store(Request $request)
     {

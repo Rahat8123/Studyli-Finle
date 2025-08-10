@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\CourseSection;
 use App\Models\Question;
-use Illuminate\Support\Facades\Auth; 
+use Illuminate\Support\Facades\Auth;
 use Carbon\Carbon;
 
 class QuestionController extends Controller
@@ -29,9 +29,9 @@ class QuestionController extends Controller
             'message' => 'Message Send Successfully',
             'alert-type' => 'success'
         );
-        return redirect()->back()->with($notification);  
+        return redirect()->back()->with($notification);
 
-    } // End Method 
+    }
 
     public function InstructorAllQuestion(){
 
@@ -39,7 +39,7 @@ class QuestionController extends Controller
         $question = Question::where('instructor_id',$id)->where('parent_id', null)->orderBy('id','desc')->get();
         return view('instructor.question.all_question',compact('question'));
 
-    }// End Method 
+    }
 
     public function QuestionDetails($id){
 
@@ -47,7 +47,7 @@ class QuestionController extends Controller
         $replay = Question::where('parent_id',$id)->orderBy('id','asc')->get();
         return view('instructor.question.question_details',compact('question','replay'));
 
-    }// End Method 
+    }
 
     public function InstructorReplay(Request $request){
 
@@ -69,10 +69,10 @@ class QuestionController extends Controller
             'message' => 'Message Send Successfully',
             'alert-type' => 'success'
         );
-        return redirect()->route('instructor.all.question')->with($notification); 
+        return redirect()->route('instructor.all.question')->with($notification);
 
 
-    }// End Method 
+    }
 
 
 

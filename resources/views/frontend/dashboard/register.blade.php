@@ -41,7 +41,7 @@
                     <div class="card-body">
                         <h3 class="card-title text-center fs-24 lh-35 pb-4">Create an Account and <br> Start Learning!</h3>
                         <div class="section-block"></div>
-    
+
         <form method="POST"  class="pt-4" action="{{ route('register') }}">
             @csrf
 
@@ -81,12 +81,12 @@
                 <span class="la la-envelope input-icon"></span>
             </div>
         </div><!-- end input-box -->
- 
-       
+
+
         <div class="btn-box">
             <div class="custom-control custom-checkbox mb-2 fs-15">
                 <input type="checkbox" class="custom-control-input" id="receiveCheckbox" required>
-                <label class="custom-control-label custom--control-label lh-20" for="receiveCheckbox">Yes! I want to get the most out of Aduca by receiving emails with exclusive deals, personal recommendations and learning tips!</label>
+                <label class="custom-control-label custom--control-label lh-20" for="receiveCheckbox">Yes! I want to get the most out of Studyli by receiving emails with exclusive deals, personal recommendations and learning tips!</label>
             </div><!-- end custom-control -->
             <div class="custom-control custom-checkbox mb-4 fs-15">
                 <input type="checkbox" class="custom-control-input" id="agreeCheckbox" required>
@@ -108,10 +108,4 @@
 <!-- ================================
        END CONTACT AREA
 ================================= -->
-
-
-
-
-
-
 @endsection
