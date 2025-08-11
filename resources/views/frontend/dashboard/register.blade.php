@@ -70,7 +70,7 @@
         <div class="input-box">
             <label class="label-text">Password</label>
             <div class="form-group">
-                <input class="form-control form--control" id="password" type="password" name="password" placeholder="Username">
+                <input class="form-control form--control" id="password" type="password" name="password" placeholder="password">
                 <span class="la la-user input-icon"></span>
             </div>
         </div><!-- end input-box -->

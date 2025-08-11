@@ -25,7 +25,7 @@
 
     @else
 
-    <li class="d-flex align-items-center pr-3 mr-3 border-right border-right-gray"><i class="la la-sign-in mr-1"></i><a href="{{ route('login') }}"> Login</a></li>
+    <li class="d-flex align-items-center pr-3 mr-3 border-right border-right-gray"><i class="la la-sign-in mr-1"></i><a href="{{ route('login') }}" style="color: green"> Login</a></li>
     <li class="d-flex align-items-center"><i class="la la-user mr-1"></i><a href="{{ route('register') }}"> Register</a></li>
 
     @endauth
@@ -110,7 +110,7 @@
                     <a href="{{ route('course.grid') }}">Courses <i class="la la-angle-down fs-12"></i></a>
                     <ul class="dropdown-menu-item">
                         <li><a href="course-grid.html">course grid</a></li>
-                        <li><a href="course-list.html">course list</a></li>
+                        <li  style="color: red"><a href="course-list.html">course list</a></li>
 
                     </ul>
                 </li>

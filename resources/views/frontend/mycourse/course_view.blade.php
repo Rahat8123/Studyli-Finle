@@ -355,8 +355,8 @@ START COURSE-DASHBOARD
                     <h3 class="fs-16 font-weight-semi-bold pb-2">Certificates</h3>
                 </div><!-- end lecture-overview-stats-item -->
                 <div class="lecture-overview-stats-item lecture-overview-stats-wide-item">
-                    <p class="pb-3">Get Aduca certificate by completing entire course</p>
-                    <a href="#" class="btn theme-btn theme-btn-transparent">Aduca Certificate</a>
+                    <p class="pb-3">Get studyli certificate by completing entire course</p>
+                    <a href="#" class="btn theme-btn theme-btn-transparent">studyli Certificate</a>
                 </div><!-- end lecture-overview-stats-item -->
             </div><!-- end lecture-overview-stats-wrap -->
         </div><!-- end lecture-overview-item -->
@@ -378,7 +378,7 @@ START COURSE-DASHBOARD
                     <h3 class="fs-16 font-weight-semi-bold pb-2">Description</h3>
                 </div><!-- end lecture-overview-stats-item -->
                 <div class="lecture-overview-stats-item lecture-overview-stats-wide-item lecture-description">
-                    <h3 class="fs-16 font-weight-semi-bold pb-2">From the Author of the Best Selling After Effects CC 2020 Complete Course</h3>
+                    <h3 class="fs-16 font-weight-semi-bold pb-2">From the Author of the Best Selling After Effects CC 2025 Complete Course</h3>
                     <p> {!! $course->course->description !!} </p>
 
 
@@ -538,7 +538,7 @@ START COURSE-DASHBOARD
                     <img src="images/small-avatar-1.jpg" alt="Instructor avatar" class="rounded-full">
                 </a>
                 <div class="media-body">
-                    <h5 class="pb-1"><a href="teacher-detail.html">Alex Smith</a></h5>
+                    <h5 class="pb-1"><a href="teacher-detail.html">Rahat</a></h5>
                     <div class="announcement-meta fs-15">
                         <span>Posted an announcement</span>
                         <span> · 3 years ago ·</span>
@@ -580,7 +580,7 @@ START COURSE-DASHBOARD
                         </div><!-- end media-img -->
                         <div class="media-body">
                             <div class="announcement-meta fs-15 lh-20">
-                                <a href="#" class="text-color">Tony Olsson</a>
+                                <a href="#" class="text-color">Al Raji</a>
                                 <span> · 3 years ago ·</span>
                                 <a href="#" class="btn-text" data-toggle="modal" data-target="#reportModal" title="Report abuse"><i class="la la-flag"></i></a>
                             </div>
@@ -628,7 +628,7 @@ START COURSE-DASHBOARD
 <div class="row align-items-center">
 <div class="col-lg-6">
     <div class="cta-content-wrap">
-        <h3 class="fs-18 font-weight-semi-bold">Top companies choose <a href="for-business.html" class="text-color hover-underline">Aduca for Business</a> to build in-demand career skills.</h3>
+        <h3 class="fs-18 font-weight-semi-bold">Top companies choose <a href="for-business.html" class="text-color hover-underline">studyli for Business</a> to build in-demand career skills.</h3>
     </div>
 </div><!-- end col-lg-6 -->
 <div class="col-lg-6">
@@ -647,12 +647,12 @@ START COURSE-DASHBOARD
 <div class="col-lg-3 responsive-column-half">
     <div class="footer-item">
         <a href="index.html">
-            <img src="{{ asset('frontend/images/logo.png') }}" alt="footer logo" class="footer__logo">
+            <img src="{{ asset('frontend/images/logo.png') }}" alt="footer logo" class="footer__logo" width="150" height="50">
         </a>
         <ul class="generic-list-item pt-4">
-            <li><a href="tel:+1631237884">+163 123 7884</a></li>
-            <li><a href="mailto:support@wbsite.com">support@website.com</a></li>
-            <li>Melbourne, Australia, 105 South Park Avenue</li>
+            <li><a href="tel:+8801826426287">+880 1826 426287</a></li>
+            <li><a href="mailto:rayhanulrahat8123@gmail.com">rayhanulrahat8123@gmail.com</a></li>
+            <li>Daffodil University</li>
         </ul>
     </div><!-- end footer-item -->
 </div><!-- end col-lg-3 -->
@@ -699,7 +699,7 @@ START COURSE-DASHBOARD
 <div class="container-fluid">
 <div class="row align-items-center">
     <div class="col-lg-6">
-        <p class="copy-desc">&copy; 2021 Aduca. All Rights Reserved. by <a href="https://techydevs.com/">TechyDevs</a></p>
+        <p class="copy-desc">&copy; 2021 studyli. All Rights Reserved. by <a href="https://techydevs.com/">TechyDevs</a></p>
     </div><!-- end col-lg-6 -->
     <div class="col-lg-6">
         <div class="d-flex flex-wrap align-items-center justify-content-end">
@@ -888,7 +888,7 @@ START COURSE-DASHBOARD
                 <div class="copy-to-clipboard">
                     <span class="success-message">Copied!</span>
                     <div class="input-group">
-                        <input type="text" class="form-control form--control copy-input pl-3" value="https://www.aduca.com/share/101WxMB0oac1hVQQ==/">
+                        <input type="text" class="form-control form--control copy-input pl-3" value="https://www.studyli.com/share/101WxMB0oac1hVQQ==/">
                         <div class="input-group-append">
                             <button class="btn theme-btn theme-btn-sm copy-btn shadow-none"><i class="la la-copy mr-1"></i> Copy</button>
                         </div>
@@ -913,7 +913,7 @@ START COURSE-DASHBOARD
             <div class="modal-header border-bottom-gray">
                 <div class="pr-2">
                     <h5 class="modal-title fs-19 font-weight-semi-bold lh-24" id="reportModalTitle">Report Abuse</h5>
-                    <p class="pt-1 fs-14 lh-24">Flagged content is reviewed by Aduca staff to determine whether it violates Terms of Service or Community Guidelines. If you have a question or technical issue, please contact our
+                    <p class="pt-1 fs-14 lh-24">Flagged content is reviewed by studyli staff to determine whether it violates Terms of Service or Community Guidelines. If you have a question or technical issue, please contact our
                         <a href="contact.html" class="text-color hover-underline">Support team here</a>.</p>
                 </div>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -930,7 +930,7 @@ START COURSE-DASHBOARD
                                     <option value>-- Select One --</option>
                                     <option value="1">Inappropriate Course Content</option>
                                     <option value="2">Inappropriate Behavior</option>
-                                    <option value="3">Aduca Policy Violation</option>
+                                    <option value="3">Studyli Policy Violation</option>
                                     <option value="4">Spammy Content</option>
                                     <option value="5">Other</option>
                                 </select>

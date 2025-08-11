@@ -99,7 +99,7 @@
                         </p>
                     </div>
                     <div class="hero-btn-box d-flex flex-wrap align-items-center pt-1 justify-content-end">
-                        <a href="#" class="btn-text video-play-btn mr-4 mb-4" data-fancybox data-src="https://www.youtube.com/watch?v=cRXm1p-CNyk">
+                        <a href="#" class="btn-text video-play-btn mr-4 mb-4" data-fancybox data-src="https://www.youtube.com/watch?v=i5a_NSqO0MA">
                             <i class="la la-play icon-btn mr-2"></i> প্রিভিউ দেখুন
                         </a>
                         <a href="" class="btn theme-btn mb-4">
