@@ -659,7 +659,7 @@
       <!-- Advanced Footer Section -->
       <div class="footer-section">
         <div class="thanks">
-          <p>Thank you for choosing EasyShop!</p>
+          <p>Thank you for choosing sTUDYLI!</p>
         </div>
 
         <div class="authority">

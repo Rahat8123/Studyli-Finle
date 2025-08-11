@@ -74,21 +74,19 @@
         <h3 class="card-title fs-22 pb-3">Select Payment Method</h3>
         <div class="divider"><span></span></div>
         <div class="payment-option-wrap">
-            <div class="payment-tab is-active">
-                <div class="payment-tab-toggle">
-                    <input checked="" id="bankTransfer" name="cash_delivery" type="radio" value="handcash">
-                    <label for="bankTransfer">Free Enrollment(Gorib)</label>
-                </div>
-
-                <div class="payment-tab-toggle">
-                    <input checked="" id="bankTransfer" name="cash_delivery" type="radio" value="stripe">
-                    <label for="bankTransfer">Online  Payment</label>
-                </div>
-
-            </div><!-- end payment-tab -->
-
-
+    <div class="payment-tab is-active">
+        <div class="payment-tab-toggle">
+            <input id="handcash" name="cash_delivery" type="radio" value="handcash">
+            <label for="handcash">Free Enrollment (Gorib)</label>
         </div>
+
+        <div class="payment-tab-toggle">
+            <input id="stripe" name="cash_delivery" type="radio" value="stripe" checked>
+            <label for="stripe">Online Payment</label>
+        </div>
+    </div><!-- end payment-tab -->
+</div>
+
     </div><!-- end card-body -->
 </div><!-- end card -->
             </div><!-- end col-lg-7 -->
@@ -175,7 +173,7 @@
 
 
                         <div class="btn-box border-top border-top-gray pt-3">
-                            <p class="fs-14 lh-22 mb-2">Aduca is required by law to collect applicable transaction taxes for purchases made in certain tax jurisdictions.</p>
+                            <p class="fs-14 lh-22 mb-2">Studyli is required by law to collect applicable transaction taxes for purchases made in certain tax jurisdictions.</p>
                             <p class="fs-14 lh-22 mb-3">By completing your purchase you agree to these <a href="#" class="text-color hover-underline">Terms of Service.</a></p>
                             <button type="submit" class="btn theme-btn w-100">Proceed <i class="la la-arrow-right icon ml-1"></i></button>
 

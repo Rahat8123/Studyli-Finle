@@ -131,7 +131,7 @@
                        </ul>
                    </div><!-- end course-overview-card -->
                    <div class="course-overview-card bg-gray p-4 rounded">
-                       <h3 class="fs-16 font-weight-semi-bold">Curated for the <a href="for-business.html" class="text-color hover-underline">Aduca for Business</a> collection</h3>
+                       <h3 class="fs-16 font-weight-semi-bold">Curated for the <a href="for-business.html" class="text-color hover-underline">Studyli for Business</a> collection</h3>
                    </div><!-- end course-overview-card -->
                    <div class="course-overview-card">
                        <h3 class="fs-24 font-weight-semi-bold pb-3">Requirements</h3>
@@ -141,15 +141,15 @@
                        </ul>
                    </div><!-- end course-overview-card -->
                     <div class="course-overview-card border border-gray p-4 rounded">
-                       <h3 class="fs-20 font-weight-semi-bold">Top companies trust Aduca</h3>
-                       <p class="fs-15 pb-1">Get your team access to Aduca's top 5,000+ courses</p>
+                       <h3 class="fs-20 font-weight-semi-bold">Top companies trust Studyli</h3>
+                       <p class="fs-15 pb-1">Get your team access to Studyli's top 5,000+ courses</p>
                         <div class="pb-3">
                             <img width="85" class="mr-3" src="{{ asset('frontend/images/sponsor-img.png') }}" alt="company logo">
                             <img width="80" class="mr-3" src="{{ asset('frontend/images/sponsor-img2.png') }}" alt="company logo">
                             <img width="80" class="mr-3" src="{{ asset('frontend/images/sponsor-img3.png') }}" alt="company logo">
                             <img width="70" class="mr-3" src="{{ asset('frontend/images/sponsor-img4.png') }}" alt="company logo">
                         </div>
-                        <a href="for-business.html" class="btn theme-btn theme-btn-sm">Try Aduca for Business</a>
+                        <a href="for-business.html" class="btn theme-btn theme-btn-sm">Try Studyli for Business</a>
                    </div><!-- end course-overview-card -->
                    <div class="course-overview-card">
                        <h3 class="fs-24 font-weight-semi-bold pb-3">Description</h3>
@@ -253,7 +253,7 @@
                     <h5><a href="teacher-detail.html">{{ $course['user']['name'] }}</a></h5>
                     <span class="d-block lh-18 pt-2 pb-3">Joined {{ Carbon\Carbon::parse($course->user->created_at)->diffForHumans()  }}</span>
                     <p class="text-black lh-18 pb-3">{{ $course['user']['email'] }}</p>
-                    <p class="pb-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                    <p class="pb-3">শিক্ষক হলেন যাঁরা শিক্ষাদানের মহান ব্রত পালন করেন। স্কুল, কলেজ, বিশ্ববিদ্যালয়সহ সব ধরনের শিক্ষা প্রতিষ্ঠানের শিক্ষাদানের কাজে নিয়োজিতদেরই শিক্ষক বলা হয়। তবে প্রাথমিক ও মাধ্যমিক বিদ্যালয়গুলোতে শিক্ষকতার কাজে যারা আছেন তাদেরকে শিক্ষক বলা হয় আর কলেজ ও বিশ্ববিদ্যালয়ের শিক্ষকদের অধ্যাপক বলা হয়ে থাকে। শিক্ষকদের জাতি গঠনের কারিগর বলা হয়।</p>
                     <div class="collapse" id="collapseMoreTwo">
                         <p class="pb-3">After learning the hard way, Tim was determined to become the best teacher he could, and to make his training as painless as possible, so that you, or anyone else with the desire to become a software developer, could become one.</p>
                         <p class="pb-3">If you want to become a financial analyst, a finance manager, an FP&A analyst, an investment banker, a business executive, an entrepreneur, a business intelligence analyst, a data analyst, or a data scientist, <strong class="text-black font-weight-semi-bold">Tim Buchalka's courses are the perfect course to start</strong>.</p>
@@ -611,8 +611,8 @@
                                     <div class="section-block"></div>
                                     <div class="buy-for-team-container pt-4">
                                         <h3 class="fs-18 font-weight-semi-bold pb-2">Training 5 or more people?</h3>
-                                        <p class="lh-24 pb-3">Get your team access to 3,000+ top Aduca courses anytime, anywhere.</p>
-                                        <a href="for-business.html" class="btn theme-btn theme-btn-sm theme-btn-transparent lh-30 w-100">Try Aduca for Business</a>
+                                        <p class="lh-24 pb-3">Get your team access to 3,000+ top Studyli courses anytime, anywhere.</p>
+                                        <a href="for-business.html" class="btn theme-btn theme-btn-sm theme-btn-transparent lh-30 w-100">Try Studyli for Business</a>
                                     </div>
                                 </div><!-- end preview-course-incentives -->
                             </div><!-- end preview-course-content -->
@@ -781,19 +781,9 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-9">
-                <div class="cta-content-wrap py-4 d-flex flex-wrap align-items-center">
-                    <svg class="flex-shrink-0 mr-4" width="70" viewBox="0 -48 496 496" xmlns="http://www.w3.org/2000/svg"><path d="m472 0h-448c-13.230469 0-24 10.769531-24 24v352c0 13.230469 10.769531 24 24 24h448c13.230469 0 24-10.769531 24-24v-352c0-13.230469-10.769531-24-24-24zm8 376c0 4.414062-3.59375 8-8 8h-448c-4.40625 0-8-3.585938-8-8v-352c0-4.40625 3.59375-8 8-8h448c4.40625 0 8 3.59375 8 8zm0 0"></path><path d="m448 32h-400v240h400zm-16 224h-368v-208h368zm0 0"></path><path d="m328 200.136719c0-17.761719-11.929688-33.578125-29.007812-38.464844l-26.992188-7.703125v-2.128906c9.96875-7.511719 16-19.328125 16-31.832032v-14.335937c0-21.503906-16.007812-39.726563-36.449219-41.503906-11.183593-.96875-22.34375 2.800781-30.574219 10.351562-8.25 7.550781-12.976562 18.304688-12.976562 29.480469v16c0 12.503906 6.03125 24.328125 16 31.832031v2.128907l-26.992188 7.710937c-17.078124 4.886719-29.007812 20.703125-29.007812 38.464844v39.863281h160zm-16 23.863281h-128v-23.863281c0-10.664063 7.160156-20.152344 17.40625-23.082031l38.59375-11.023438v-23.070312l-3.976562-2.3125c-7.527344-4.382813-12.023438-12.105469-12.023438-20.648438v-16c0-6.703125 2.839844-13.160156 7.792969-17.695312 5.007812-4.601563 11.496093-6.832032 18.382812-6.207032 12.230469 1.0625 21.824219 12.285156 21.824219 25.566406v14.335938c0 8.542969-4.496094 16.265625-12.023438 20.648438l-3.976562 2.3125v23.070312l38.59375 11.023438c10.246094 2.9375 17.40625 12.425781 17.40625 23.082031zm0 0"></path><path d="m32 364.945312 73.886719-36.945312-73.886719-36.945312zm16-48 22.113281 11.054688-22.113281 11.054688zm0 0"></path><path d="m152 288h16v80h-16zm0 0"></path><path d="m120 288h16v80h-16zm0 0"></path><path d="m336 288h-48v32h-104v16h104v32h48v-32h128v-16h-128zm-16 64h-16v-48h16zm0 0"></path></svg>
-                    <div class="section-heading">
-                        <h2 class="section__title mb-1 fs-22">Become a Teacher, Share your knowledge</h2>
-                        <p class="section__desc">Create an online video course, reach students across the globe, and earn money</p>
-                    </div><!-- end section-heading -->
-                </div>
+               
             </div><!-- end col-lg-9 -->
-            <div class="col-lg-3">
-                <div class="cta-btn-box text-right">
-                    <a href="become-a-teacher.html" class="btn theme-btn">Tech on Aduca <i class="la la-arrow-right icon ml-1"></i> </a>
-                </div>
-            </div><!-- end col-lg-3 -->
+
         </div><!-- end row -->
     </div><!-- end container -->
 </section><!-- end cta-area -->
@@ -869,7 +859,7 @@
             <div class="modal-header border-bottom-gray">
                 <div class="pr-2">
                     <h5 class="modal-title fs-19 font-weight-semi-bold lh-24" id="reportModalTitle">Report Abuse</h5>
-                    <p class="pt-1 fs-14 lh-24">Flagged content is reviewed by Aduca staff to determine whether it violates Terms of Service or Community Guidelines. If you have a question or technical issue, please contact our
+                    <p class="pt-1 fs-14 lh-24">Flagged content is reviewed by Studyli staff to determine whether it violates Terms of Service or Community Guidelines. If you have a question or technical issue, please contact our
                         <a href="contact.html" class="text-color hover-underline">Support team here</a>.</p>
                 </div>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -886,7 +876,7 @@
                                     <option value>-- Select One --</option>
                                     <option value="1">Inappropriate Course Content</option>
                                     <option value="2">Inappropriate Behavior</option>
-                                    <option value="3">Aduca Policy Violation</option>
+                                    <option value="3">Studyli Policy Violation</option>
                                     <option value="4">Spammy Content</option>
                                     <option value="5">Other</option>
                                 </select>
